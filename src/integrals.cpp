@@ -15,7 +15,7 @@
 
 //for a description of the functions refer to integrals.h
 
-void polarization_midrapidity(double pT, double phi, pdg_particle particle, vector<element> &freeze_out_sup, ofstream &fileout){
+void polarization_midrapidity(double pT, double phi, pdg_particle particle, std::vector<element> &freeze_out_sup, std::ofstream &fileout){
     double P_vorticity[4] = {0,0,0,0};
     double P_shear[4] = {0,0,0,0};
     double Denominator = 0;
@@ -85,7 +85,7 @@ void polarization_midrapidity(double pT, double phi, pdg_particle particle, vect
 
 }
 
-void polarization_projected(double pT, double phi, pdg_particle particle, vector<element> &freeze_out_sup, ofstream &fileout){
+void polarization_projected(double pT, double phi, pdg_particle particle, std::vector<element> &freeze_out_sup, std::ofstream &fileout){
     double P_vorticity[4] = {0,0,0,0};
     double P_shear[4] = {0,0,0,0};
     double Denominator = 0;
@@ -165,7 +165,7 @@ void polarization_projected(double pT, double phi, pdg_particle particle, vector
 
 }
 
-void polarization_midrapidity_linear(double pT, double phi, pdg_particle particle, vector<element> &freeze_out_sup, ofstream &fileout){
+void polarization_midrapidity_linear(double pT, double phi, pdg_particle particle, std::vector<element> &freeze_out_sup, std::ofstream &fileout){
     double P_vorticity[4] = {0,0,0,0};
     double P_shear[4] = {0,0,0,0};
     double Denominator = 0;
@@ -222,7 +222,7 @@ void polarization_midrapidity_linear(double pT, double phi, pdg_particle particl
 }
 
 
-void polarization_rapidity(double pT, double phi, double y_rap, pdg_particle particle, vector<element> &freeze_out_sup, ofstream &fileout){
+void polarization_rapidity(double pT, double phi, double y_rap, pdg_particle particle, std::vector<element> &freeze_out_sup, std::ofstream &fileout){
     double P_vorticity[4] = {0,0,0,0};
     double P_shear[4] = {0,0,0,0};
     double P_shear_chun[4] = {0,0,0,0};
@@ -296,7 +296,7 @@ void polarization_rapidity(double pT, double phi, double y_rap, pdg_particle par
 
 }
 
-void spectrum_rapidity(double pT, double phi, double y_rap, pdg_particle particle, vector<element> &freeze_out_sup, ofstream &fileout){
+void spectrum_rapidity(double pT, double phi, double y_rap, pdg_particle particle, std::vector<element> &freeze_out_sup, std::ofstream &fileout){
     double dNd3p = 0;
     
     // get particle's info
